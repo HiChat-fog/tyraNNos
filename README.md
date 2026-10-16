@@ -1,2 +1,3 @@
 # tyraNNos
 A programming language‌ designed for precise control over Word document formatting.
+An LLM/Agent-native bidirectional Word converter: tyra ↔ Word. The core scenario is "existing complete source text + template" → correctly formatted Word: the model only performs structural annotation (classification), not content generation. Source files are short-key JSON Lines (L0); the compiler outputs .docx files with live fields (REF/SEQ/TOC fields, refreshable with F9 in Word), SEQ-numbered captions, native OMML, and deterministic numbering; the reverse direction can read .docx back into tyra source files. All four components share the same AST.
